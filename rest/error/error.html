@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>데이터 불러오기 오류!</title>
+    </head>
+    <body>
+    
+        <div style="margin-top: 300px;">
+        
+        <h1 style="text-align: center; color: cornflowerblue; font-size: 100px">어라?<br><span style="color: black; text-align: left; font-size: 40px;">데이터를 받아오는데 문제가 생겼습니다</span></h1>
+        <p style="text-align: center" id="errordisplay">Error Code : 00</p>
+            <p style="text-align: center" id="detail">해당 페이지의 data.js 파일이 손상되어 데이터를 제대로 불러 올 수 없습니다.</p>
+        </div>
+        <div style="text-align: center">
+        <button style="padding: 20px; width: 300px; border-radius: 5px; border: none" onclick="go()">이전 페이지로 이동하기</button>
+        </div>
+        <script>
+            function go(){
+                window.location.href = '../../index.html'
+            }
+            var code = localStorage.getItem('errorcode');
+            document.getElementById('errordisplay').innerHTML = 'Error Code : ' + code;
+            document.getElementById('detail').innerHTML = name + ' 페이지의 data.js 파일이 손상되어 데이터를 제대로 불러 올 수 없습니다.'
+        </script>
+    </body>
+</html>
