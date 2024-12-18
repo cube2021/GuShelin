@@ -18,19 +18,6 @@
     height: auto;
 }
 
-@font-face {
-    font-family: 'goorm-sans-code';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/goorm-sans-code.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Paperlogy-8ExtraBold';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
-    font-weight: 800;
-    font-style: normal;
-}
 .main-button {
     width: 13.5%;
     border: none;
@@ -55,6 +42,24 @@
     font-weight: normal;
     font-style: normal;
 }
-#mainbanner {
-    max-width: 100%;
+.card-text {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.sinjion {
+    width: 100px;
+    height: auto;
+    @media (max-width: 768px) {
+        width: 50px;
+    }
+}
+
+.blocker {
+    width: 100%;
+    height: auto;
+    @media (max-height: 768px) {
+        height: 120px;
+    }
 }
